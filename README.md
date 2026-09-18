@@ -16,10 +16,10 @@ Panduan rasmi: https://docs.github.com/en/pages/getting-started-with-github-page
 - Cari `const JANNAH`. Tukar nilai `points:null` kepada nombor yang disahkan; isi `updated` dengan tarikh data sebenar.
 - Kedudukan disusun automatik apabila semua empat nilai markah tersedia. Nilai seri mendapat kedudukan sama.
 - Ini belum bersambung kepada Google Sheets. Tiada dakwaan data langsung atau auto-sync.
-- Logo dan foto asal belum dipindahkan. Monogram BPP dan singkatan nama adalah elemen teks, bukan logo rasmi atau foto pelajar.
+- Logo asal BPP telah dimasukkan. Foto asal belum dipindahkan; kad MVP masih menggunakan singkatan nama.
 - Data MVP berdasarkan teks Canva Penggal 1–3 2026; bukan kedudukan semasa.
 - Semak nama, markah, kandungan dan kesesuaian penerbitan sebelum menanggalkan label pratonton.
 
 ## Asas kandungan
-Reka bentuk Canva pengguna: https://www.canva.com/design/DAHPLyO3m7U/C5xpvmulw86vwYCsHsrwGQ/edit
-Visi dan misi dikekalkan. Placeholder template dibuang; penerangan dipendekkan. Empat aktiviti dipilih sebagai sorotan. Jumlah markah Jannah dibiarkan kosong kerana tiada angka yang dapat disahkan daripada teks sumber.
+Reka bentuk Canva BPP milik pengguna.
+Visi dan misi dikekalkan. Placeholder template dibuang; penerangan dipendekkan. Empat aktiviti dipilih sebagai sorotan. Jumlah markah disemak dengan tab Ranking Jannah dan Dashboard dalam jannah terbaik v4 pada 18 September 2026: Adnin 525, Ma'wa 492, Firdaus 398, Na'im 397. Ini salinan data semasa, bukan sambungan automatik. Rekod pelajar dan disiplin individu tidak disalin ke website.
