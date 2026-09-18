@@ -12,6 +12,74 @@
 :root{color-scheme:dark;--green:#7c3aed;--deep:#08060d;--gold:#c4a0ff;--ink:#f5f0ff;--muted:#b8adc8;--line:#352640;--paper:#0d0912}
 .header{background:rgba(13,9,18,.97)}.brand small{color:#bbadcf}.links a:hover{color:#d4b8ff}.hero{background:radial-gradient(ellipse at 80% 20%,#402060 0,transparent 55%),#100b17}.hero p{color:#d4c9e0}.hero-side{background:#190f25;border-color:#593c74}.hero-foot{border-color:#352640;color:#c5b7d5}.hero-caption .house-mini span{border-color:#4e3563}.btn{background:#9c63ef;color:#fff}.btn:hover{background:#ad79f7}.textlink{border-color:#9978b6}.eyebrow{color:#c4a0ff}.hero .eyebrow{color:#d2adff}.white{background:#110c19}.vision,.house,.mvp{background:#1b1227;border-color:#3d2a50}.house{border-top-color:var(--house)}.house-crest{background:transparent;border-radius:0;height:190px}.jannah{background:#130d1d}.notice{color:#c5b7d5;border-color:#9c63ef}.activity{border-top-color:#9c63ef}.date{color:#b8adc8}.vision .eyebrow,.unit .num,.award{color:#c4a0ff}.mvp.top{background:linear-gradient(145deg,#3b1b59,#211131);border-color:#8253b4}.portrait{background:linear-gradient(155deg,#30203e,#21152e)}.top .portrait{background:linear-gradient(155deg,#5d347a,#321d48)}.top p{color:#d4c9e0}.top .points{border-color:#704887;color:#ddc5ff}.points{color:#e6d5ff}.rules details{background:#1b1227;border-color:#3d2a50}details p,details li{color:#c8bbd6}.bar{background:#392b45}.closing{background:#0c0813}.closing:before{background:linear-gradient(90deg,#11081fe8,#24103799)}.closing p,.visual-note{color:#d5c8e5!important}.footer{background:#08060d;color:#bbadcf}.draft{background:#291a39;color:#d9c4ed}.skip{background:#28183b;color:white}a:focus-visible,button:focus-visible,summary:focus-visible{outline-color:#d4b0ff}noscript p{background:#28183b}@media(max-width:700px){.house-crest{height:145px}}
 .ticker{display:grid;grid-template-columns:auto minmax(0,1fr);background:#08060d;border-bottom:1px solid #352640;color:#f5f0ff;overflow:hidden}.ticker-label{position:relative;z-index:2;display:flex;align-items:center;background:#9c63ef;padding:10px 22px;font-size:12px;font-weight:800;letter-spacing:.16em;white-space:nowrap}.ticker-window{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}.ticker-track{display:flex;width:max-content;animation:ticker-scroll 26s linear infinite}.ticker-set{display:flex;align-items:center;flex-shrink:0;gap:28px;padding:10px 28px 10px 0;font-size:13px;font-weight:650;letter-spacing:.06em;white-space:nowrap}.ticker-set span{display:flex;align-items:center;gap:28px}.ticker-set span:after{content:'◆';color:#a96af2;font-size:8px}@keyframes ticker-scroll{to{transform:translateX(-50%)}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:700px){.ticker-label{padding:9px 13px;font-size:10px}.ticker-set{font-size:11px;gap:22px;padding-block:9px}.ticker-set span{gap:22px}}@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}.ticker-window{overflow-x:auto;mask-image:none}.ticker-set:nth-child(2){display:none}}
+
+/* Rounded editorial refresh — black, purple and restrained gold. */
+:root{--accent-gold:#d7b667;--accent-gold-soft:#f1d999;--surface:#1a1124;--surface-raised:#21152d;--radius-sm:14px;--radius-md:22px;--radius-lg:30px;--radius-xl:42px}
+body{background:radial-gradient(circle at 8% 18%,rgba(124,58,237,.09),transparent 30rem),radial-gradient(circle at 92% 63%,rgba(156,99,239,.07),transparent 34rem),var(--paper)}
+.header{border-bottom-color:rgba(215,182,103,.18);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.logo-frame{border-radius:16px}
+.menu{border-color:#523866;border-radius:999px;color:#f5f0ff;padding:8px 16px}
+.links a{position:relative;padding:8px 0}
+.links a:after{content:"";position:absolute;left:0;right:100%;bottom:1px;height:1px;background:var(--accent-gold);transition:right .2s ease}
+.links a:hover{color:var(--accent-gold-soft)}
+.links a:hover:after{right:0}
+.ticker{border-bottom-color:rgba(215,182,103,.36);box-shadow:0 12px 35px rgba(0,0,0,.2)}
+.ticker-label{background:linear-gradient(135deg,#a465f3,#7541b5);border-radius:0 999px 999px 0;margin-right:9px;box-shadow:10px 0 25px rgba(86,38,133,.35)}
+.ticker-set span:after{color:var(--accent-gold)}
+.hero{background:transparent;padding-top:24px;overflow:visible}
+.hero>.wrap{position:relative;isolation:isolate;overflow:hidden;padding:78px 64px 68px;background:radial-gradient(circle at 82% 17%,rgba(124,58,237,.38),transparent 34%),linear-gradient(145deg,#110b19,#1b0f29 64%,#120a1c);border:1px solid #4b3360;border-radius:var(--radius-xl);box-shadow:0 30px 80px rgba(0,0,0,.3);grid-template-columns:1.28fr 1fr;gap:64px}
+.hero>.wrap:after{content:"";position:absolute;width:430px;height:430px;right:-250px;bottom:-260px;border:1px solid rgba(215,182,103,.28);border-radius:50%;z-index:-1;box-shadow:0 0 0 70px rgba(215,182,103,.025)}
+.hero>.wrap>div,.hero>.wrap>.hero-side{position:relative;z-index:1}
+.eyebrow{display:flex;align-items:center;gap:9px}
+.eyebrow:before{content:"";width:22px;height:2px;border-radius:999px;background:var(--accent-gold);flex:0 0 auto}
+.hero .eyebrow{color:#d8b8ff}
+.btn{background:linear-gradient(135deg,var(--accent-gold-soft),var(--accent-gold));color:#1a1022;border-radius:999px;padding:14px 24px;box-shadow:0 12px 32px rgba(174,128,43,.2);transition:transform .2s ease,box-shadow .2s ease}
+.btn:hover{background:linear-gradient(135deg,#f5e1aa,#dabc70);transform:translateY(-2px);box-shadow:0 16px 34px rgba(174,128,43,.28)}
+.textlink{border-color:rgba(215,182,103,.6);border-radius:2px;color:#e6d9f2}
+.hero-side{border-radius:var(--radius-lg);box-shadow:0 22px 55px rgba(0,0,0,.28);transform:translateY(18px)}
+.campus-photo{border-radius:var(--radius-lg) var(--radius-lg) 0 0}
+.hero-caption{background:linear-gradient(180deg,rgba(35,21,48,.98),rgba(24,15,34,.98));border-radius:0 0 var(--radius-lg) var(--radius-lg)}
+.hero-caption .house-mini span{border-color:#513867}
+.hero-foot{border:0;padding:16px 0 26px}
+.hero-foot .wrap{background:#15101d;border:1px solid #3d2a4d;border-radius:999px;padding:10px 20px;box-shadow:0 14px 35px rgba(0,0,0,.16)}
+.section{padding:96px 0}
+.section-head{position:relative;padding-bottom:26px;margin-bottom:32px}
+.section-head:after{content:"";position:absolute;left:0;bottom:0;width:82px;height:2px;border-radius:999px;background:linear-gradient(90deg,var(--accent-gold),transparent)}
+.vision{position:relative;overflow:hidden;border-radius:var(--radius-md);border-color:#422d53;background:linear-gradient(145deg,#20142c,#17101f);box-shadow:0 18px 45px rgba(0,0,0,.14)}
+.vision:after{content:"";position:absolute;width:90px;height:90px;right:-52px;top:-52px;border:1px solid rgba(215,182,103,.42);border-radius:50%}
+.units{border:0;gap:14px}
+.unit{background:rgba(28,18,39,.64);border:1px solid #362545;border-radius:var(--radius-md);padding:26px 24px;box-shadow:0 14px 32px rgba(0,0,0,.09)}
+.unit .num{color:var(--accent-gold)}
+.white{background:linear-gradient(180deg,rgba(17,12,25,.92),rgba(13,9,18,0))}
+.activities{gap:18px}
+.activity{position:relative;overflow:hidden;min-height:250px;padding:26px 24px;background:linear-gradient(155deg,#21152d,#17101f);border:1px solid #3f2b50;border-top-color:#3f2b50;border-radius:var(--radius-md);box-shadow:0 18px 45px rgba(0,0,0,.14);transition:transform .2s ease,border-color .2s ease}
+.activity:after{content:"";position:absolute;left:24px;right:24px;bottom:0;height:3px;border-radius:999px 999px 0 0;background:linear-gradient(90deg,var(--accent-gold),#9c63ef,transparent)}
+.activity:hover{transform:translateY(-5px);border-color:#684786}
+.date{display:inline-flex;align-items:center;min-height:30px;padding:4px 11px;border:1px solid rgba(215,182,103,.36);border-radius:999px;background:rgba(215,182,103,.07);color:#ead69c}
+.jannah{margin:0 16px;background:radial-gradient(circle at 15% 10%,rgba(124,58,237,.13),transparent 33rem),#130d1d;border:1px solid #382548;border-radius:52px;box-shadow:0 28px 75px rgba(0,0,0,.2)}
+.notice{border:1px solid rgba(215,182,103,.34);border-left-width:3px;border-radius:var(--radius-sm);background:rgba(215,182,103,.055);padding:11px 16px}
+.houses{gap:16px}
+.house{overflow:hidden;border:1px solid #432e55;border-top:4px solid var(--house);border-radius:var(--radius-lg);background:linear-gradient(160deg,#21152d,#17101f);box-shadow:0 20px 48px rgba(0,0,0,.2);transition:transform .2s ease,box-shadow .2s ease}
+.house:hover{transform:translateY(-5px);box-shadow:0 27px 58px rgba(0,0,0,.28)}
+.house-crest{border-radius:20px;background:rgba(255,255,255,.015)}
+.rank{display:inline-flex;padding:4px 10px;border:1px solid #4a335d;border-radius:999px;background:#180f21}
+.bar,.bar span{border-radius:999px}
+.rules details{border-radius:var(--radius-md);background:linear-gradient(145deg,#1d1328,#160f1e);box-shadow:0 14px 35px rgba(0,0,0,.11)}
+.mvp{overflow:hidden;border-radius:var(--radius-lg);background:linear-gradient(155deg,#21152d,#17101f);box-shadow:0 20px 50px rgba(0,0,0,.17)}
+.mvp.top{background:radial-gradient(circle at 90% 0,rgba(215,182,103,.12),transparent 38%),linear-gradient(145deg,#3b1b59,#211131);border-color:#8761a9}
+.award{color:var(--accent-gold);min-height:42px}
+.portrait{border-radius:20px}
+.points{color:#ead69c;border-color:#4b355d}
+.quote{position:relative;border:1px solid #3e2a4f;border-radius:var(--radius-lg);padding:32px 42px;margin-top:52px;background:linear-gradient(145deg,#1c1226,#140d1c);box-shadow:0 18px 45px rgba(0,0,0,.13)}
+.quote:before{content:"“";position:absolute;left:20px;top:-30px;color:var(--accent-gold);font:70px Georgia,serif}
+.closing{width:min(1380px,calc(100% - 32px));min-height:440px;margin:0 auto 30px;border:1px solid #4b3260;border-radius:var(--radius-xl);overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.closing:before{background:linear-gradient(90deg,#0d0714f2 8%,#1f0d3199 62%,#12081c77)}
+.closing>div{padding:36px 42px;border:1px solid rgba(215,182,103,.34);border-radius:var(--radius-lg);background:rgba(10,6,15,.66);backdrop-filter:blur(8px);box-shadow:0 22px 60px rgba(0,0,0,.32)}
+.closing em{color:var(--accent-gold-soft)}
+.footer{border-top:1px solid rgba(215,182,103,.24);border-radius:42px 42px 0 0}
+.draft{border:1px solid rgba(215,182,103,.28);border-radius:999px;background:rgba(215,182,103,.08);color:#e6cd8e}
+@media(max-width:950px){.hero>.wrap{padding:62px 44px;gap:36px}.hero-side{transform:none}.houses{gap:14px}.activity{min-height:230px}.jannah{margin-inline:10px;border-radius:38px}.closing{border-radius:36px}}
+@media(max-width:700px){.hero{padding-top:12px}.hero>.wrap{width:calc(100% - 24px);padding:46px 24px 34px;border-radius:30px}.hero-foot{padding:12px 0 22px}.hero-foot .wrap{border-radius:20px;padding:11px 16px}.section{padding:64px 0}.vision,.unit,.activity,.rules details{border-radius:19px}.units{gap:10px}.activity{min-height:auto;padding:23px 20px}.jannah{margin-inline:6px;border-radius:30px}.house,.mvp{border-radius:22px}.quote{padding:30px 24px;border-radius:22px}.closing{width:calc(100% - 16px);min-height:360px;border-radius:30px}.closing>div{margin-inline:10px;padding:28px 20px;border-radius:22px}.footer{border-radius:30px 30px 0 0}}
 </style></head>
 <body><a class="skip" href="#utama">Langkau ke kandungan</a><header class="header"><div class="wrap nav"><a class="brand" href="#utama" aria-label="BPP, halaman utama"><span class="logo-frame"><img src="./logo-bpp.png" alt="Logo Bahagian Pembangunan Pelajar" width="1592" height="2048"></span><span><strong>Pembangunan Pelajar</strong><small>ITQSHHB · BRUNEI DARUSSALAM</small></span></a><button class="menu" aria-expanded="false" aria-controls="navigation">Menu</button><nav class="links" id="navigation" aria-label="Navigasi utama"><a href="#tentang">Tentang BPP</a><a href="#aktiviti">Aktiviti</a><a href="#jannah">Jannah</a><a href="#mvp">MVP 2026</a></nav></div></header><div class="ticker" role="region" aria-label="Sorotan BPP"><div class="ticker-label">INFO BPP</div><p class="sr-only">428 pelajar Tahun 7 hingga Tahun 11 dan Aliyah: 310 pelajar Menengah dan 118 pelajar Aliyah, terdiri daripada 203 pelajar lelaki dan 225 pelajar perempuan. Tahun 7 seramai 59, Tahun 8 seramai 68, Tahun 9 seramai 63, Tahun 10 seramai 70 dan Tahun 11 seramai 50.</p><div class="ticker-window" aria-hidden="true"><div class="ticker-track"><div class="ticker-set"><span>428 PELAJAR TAHUN 7–11 &amp; ALIYAH</span><span>310 PELAJAR MENENGAH</span><span>118 PELAJAR ALIYAH</span><span>203 LELAKI · 225 PEREMPUAN</span><span>TAHUN 7: 59 · TAHUN 8: 68 · TAHUN 9: 63 · TAHUN 10: 70 · TAHUN 11: 50</span><span>4 JANNAH · 1 MATLAMAT</span><span>MENDIDIK JIWA KHALIFAH, PEMIMPIN UMMAH</span></div><div class="ticker-set"><span>428 PELAJAR TAHUN 7–11 &amp; ALIYAH</span><span>310 PELAJAR MENENGAH</span><span>118 PELAJAR ALIYAH</span><span>203 LELAKI · 225 PEREMPUAN</span><span>TAHUN 7: 59 · TAHUN 8: 68 · TAHUN 9: 63 · TAHUN 10: 70 · TAHUN 11: 50</span><span>4 JANNAH · 1 MATLAMAT</span><span>MENDIDIK JIWA KHALIFAH, PEMIMPIN UMMAH</span></div></div></div></div>
 <main id="utama"><section class="hero"><div class="wrap"><div><div class="eyebrow">Bahagian Pembangunan Pelajar</div><h1>Mendidik jiwa<br><em>Khalifah,</em><br>Pemimpin Ummah</h1><p>Membangun syakhsiah, menyuburkan kerohanian dan menyerlahkan potensi pelajar Institut Tahfiz Al-Quran Sultan Haji Hassanal Bolkiah.</p><div class="actions"><a class="btn" href="#jannah">Terokai Jannah &nbsp; ↗</a><a class="textlink" href="#tentang">Kenali BPP</a></div></div><aside class="hero-side"><img class="campus-photo" src="./campus-day.png" alt="Visual olahan kampus institut dengan bumbung biru dan menara" fetchpriority="high"><div class="hero-caption"><div class="eyebrow">Semangat kebersamaan</div><h2>Empat Jannah.<br>Satu matlamat.</h2><div class="house-mini"><span style="--house:#f4c64d"><i class="dot"></i>Ma’wa</span><span style="--house:#77b5ef"><i class="dot"></i>Na’im</span><span style="--house:#65cb99"><i class="dot"></i>Adnin</span><span style="--house:#f48b88"><i class="dot"></i>Firdaus</span></div><p class="visual-note">Visual olahan kampus</p></div></aside></div><div class="hero-foot"><div class="wrap"><span>SYAKHSIAH &nbsp; / &nbsp; KEROHANIAN &nbsp; / &nbsp; KEPIMPINAN</span><span>Institut Tahfiz Al-Quran Sultan Haji Hassanal Bolkiah</span></div></div></section>
