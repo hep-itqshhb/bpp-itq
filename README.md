@@ -3,11 +3,11 @@
 Website statik, responsif dan tanpa pemasangan tambahan. Buka index.html untuk pratonton.
 
 ## Terbitkan melalui GitHub Pages
-1. Cipta repository GitHub bernama `bpp-itqshhb`. Pilih Public jika menggunakan GitHub Free.
+1. Cipta repository GitHub bernama `bpp-itq`. Pilih Public jika menggunakan GitHub Free.
 2. Muat naik `index.html` ke akar repository (bukan ZIP atau folder pembungkus).
 3. Buka Settings → Pages → Build and deployment.
 4. Pilih Deploy from a branch, branch main, folder /(root), kemudian Save.
-5. Tunggu deployment selesai. Alamat akan dipaparkan pada halaman Pages, lazimnya https://NAMA-AKAUN.github.io/bpp-itqshhb/.
+5. Tunggu deployment selesai. Alamat akan dipaparkan pada halaman Pages, lazimnya https://hep-itqshhb.github.io/bpp-itq/.
 
 Panduan rasmi: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
@@ -27,3 +27,6 @@ Visi dan misi dikekalkan. Placeholder template dibuang; penerangan dipendekkan. 
 
 ## Visual assets
 Campus day and night illustrations and four Jannah emblems supplied by the site owner. MVP portraits extracted with their original transparency from the supplied Pembangunan Pelajar PDF; names matched to the labelled PDF layout. Original BPP logo retained. Scores remain a verified Google Sheet snapshot, not an automatic live feed.
+
+## Theme update
+Black and purple theme requested by the owner. Four Jannah logos now use transparent PNG versions produced with the built-in image editor. Original JPEGs retained. Prompt: remove rectangular backgrounds, preserve original emblem colors, shapes and lettering, output transparent alpha.
