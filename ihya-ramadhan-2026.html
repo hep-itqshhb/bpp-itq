@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0d0912">
 <meta name="description" content="Program Ihya Ramadhan: Musabaqah Hafazan Al-Quran bagi Pelajar Peringkat Menengah ITQSHHB, 11 Mac 2026.">
+<link rel="icon" type="image/png" href="./logo-bpp.png">
 <link rel="icon" href="./logo-bpp.png">
 <title>Program Ihya Ramadhan · BPP ITQSHHB</title>
 <style>
@@ -14,6 +15,32 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .logo-frame img{height:auto}
 .visitor-counter{display:flex;align-items:center;gap:12px;width:max-content;margin-top:16px;padding:9px 12px;border:1px solid rgba(215,182,103,.25);border-radius:16px;background:rgba(215,182,103,.045)}.visitor-counter-copy{display:grid;line-height:1.25}.visitor-counter-copy strong{color:#f5f0ff;font-size:11px;letter-spacing:.1em;text-transform:uppercase}.visitor-counter-copy small{color:#9f93ad;font-size:10px}.visitor-counter img{display:block;height:28px;width:auto;border-radius:7px}
+
+/* Mobile layout hardening */
+html,body{max-width:100%;overflow-x:clip}
+@media(max-width:700px){
+  .header{background:#0d0912}
+  .nav{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:0 10px;padding:6px 0}
+  .brand{min-width:0;gap:10px}
+  .brand>span:last-child{min-width:0}
+  .brand strong{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .brand small{font-size:9px;letter-spacing:.1em;white-space:nowrap}
+  .menu{min-width:76px;min-height:44px}
+  .links{grid-column:1/-1;min-width:0}
+  .links.open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px 0 14px}
+  .links a{padding:9px 11px;border:1px solid #352640;border-radius:12px;background:#17101f}
+  .hero-panel,.feature-frame,.story-layout,.article,.aside,.results{min-width:0;max-width:100%}
+  .hero-panel{padding:38px 21px 28px}
+  h1{font-size:clamp(2.45rem,12vw,3.25rem);overflow-wrap:anywhere}
+  .feature img{height:62vw;min-height:230px}
+  .winner{grid-template-columns:minmax(0,1fr) auto}
+  .winner strong{text-align:right}
+}
+@media(max-width:360px){
+  .brand strong{font-size:12px}
+  .brand small{font-size:8px}
+  .menu{min-width:68px;padding-inline:12px}
+}
 </style>
 </head>
 <body>
