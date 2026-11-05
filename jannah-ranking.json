@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "source": "jannah terbaik v4",
+  "sourceTab": "Ranking Jannah",
+  "updatedAt": "2026-11-05",
+  "houses": [
+    {
+      "name": "Ma’wa",
+      "points": 948
+    },
+    {
+      "name": "Na’im",
+      "points": 949
+    },
+    {
+      "name": "Adnin",
+      "points": 1003
+    },
+    {
+      "name": "Firdaus",
+      "points": 907
+    }
+  ]
+}
