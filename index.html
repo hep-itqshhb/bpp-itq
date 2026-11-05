@@ -141,4 +141,48 @@ const rows=ready?[...JANNAH.houses].sort((a,b)=>b.points-a.points):JANNAH.houses
 const max=Math.max(1,...rows.map(h=>Number.isFinite(h.points)?h.points:0));
 rows.forEach((h,i)=>{const card=document.createElement('article');card.className='house';card.style.setProperty('--house',h.color);const crest=document.createElement('img');crest.className='house-crest';crest.src=h.image;crest.alt='Logo Jannah '+h.name;crest.loading='lazy';card.append(crest);const heading=document.createElement('h3');heading.textContent=h.name;card.append(heading);if(ready){const rank=document.createElement('div');rank.className='rank';rank.textContent='Kedudukan '+(rows.findIndex(r=>r.points===h.points)+1);card.append(rank)}const score=document.createElement('div');score.className='score';score.textContent=Number.isFinite(h.points)?h.points.toLocaleString('ms-MY'):'—';card.append(score);const label=document.createElement('small');label.textContent=Number.isFinite(h.points)?'markah terkumpul':'Menunggu markah disahkan';card.append(label);if(ready){const bar=document.createElement('div');bar.className='bar';const fill=document.createElement('span');fill.style.width=Math.max(0,h.points/max*100)+'%';bar.append(fill);card.append(bar)}document.getElementById('houses').append(card)});
 if(ready)document.getElementById('ranking-status').textContent='Sumber: jannah terbaik v4 · Ranking Jannah.'+(JANNAH.updated?' Dikemas kini: '+JANNAH.updated:'');
+
+/* Prefer the public, aggregate-only JSON snapshot. Keep embedded values as safe fallback. */
+(async function loadPublishedJannahRanking(){
+ try {
+  const response=await fetch('./jannah-ranking.json',{cache:'no-store'});
+  if(!response.ok)throw new Error('Ranking JSON HTTP '+response.status);
+  const data=await response.json();
+  const expected=['Ma’wa','Na’im','Adnin','Firdaus'];
+  if(data.schemaVersion!==1||data.source!=='jannah terbaik v4'||data.sourceTab!=='Ranking Jannah'||!Array.isArray(data.houses)||data.houses.length!==4){
+   throw new Error('Invalid ranking data source or schema');
+  }
+  const scoreByName=new Map();
+  data.houses.forEach(h=>{
+   if(!expected.includes(h.name)||scoreByName.has(h.name)||!Number.isInteger(h.points)||h.points<0||h.points>10000000){
+    throw new Error('Invalid or repeated Jannah score');
+   }
+   scoreByName.set(h.name,h.points);
+  });
+  if(expected.some(name=>!scoreByName.has(name)))throw new Error('Incomplete Jannah data');
+  const container=document.getElementById('houses');
+  const cards=[...container.querySelectorAll('.house')].map(card=>({
+   card,name:card.querySelector('h3').textContent.trim(),
+   points:scoreByName.get(card.querySelector('h3').textContent.trim())
+  }));
+  if(cards.length!==4||cards.some(item=>!Number.isInteger(item.points)))throw new Error('Incomplete ranking display');
+  cards.sort((a,b)=>b.points-a.points);
+  const highest=Math.max(1,...cards.map(item=>item.points));
+  cards.forEach(item=>{
+   item.card.querySelector('.rank').textContent='Kedudukan '+(cards.findIndex(other=>other.points===item.points)+1);
+   item.card.querySelector('.score').textContent=item.points.toLocaleString('ms-MY');
+   item.card.querySelector('.bar span').style.width=Math.max(0,item.points/highest*100)+'%';
+   container.appendChild(item.card);
+  });
+  const date=new Date(data.updatedAt);
+  const dateLabel=!Number.isNaN(date.getTime())
+   ? date.toLocaleDateString('ms-BN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Brunei'})
+   : 'tarikh tidak tersedia';
+  document.getElementById('ranking-status').textContent=
+   'Sumber: jannah terbaik v4 · Ranking Jannah · Data disemak: '+dateLabel+'.';
+ } catch(error) {
+  console.warn('Jannah JSON unavailable; displaying previously verified embedded snapshot.',error);
+ }
+})();
+
 </script></body></html>
