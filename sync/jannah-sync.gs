@@ -18,6 +18,9 @@ var BPP_JANNAH_SYNC = Object.freeze({
 });
 
 function setupJannahRankingAutoSync() {
+  var boundSpreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  if (!boundSpreadsheet) throw new Error('Open this Apps Script from jannah terbaik v4.');
+  PropertiesService.getScriptProperties().setProperty('JANNAH_SOURCE_SHEET_ID', boundSpreadsheet.getId());
   // Test the connection FIRST: do not install a failing recurring trigger.
   syncJannahRankingToGitHub();
   var existing = ScriptApp.getProjectTriggers().some(function (trigger) {
@@ -45,8 +48,9 @@ function syncJannahRankingToGitHub() {
       throw new Error('Missing GITHUB_TOKEN. Set it in Apps Script Project Settings > Script properties.');
     }
 
-    var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-    if (!spreadsheet) throw new Error('Run this code from the bound jannah terbaik v4 spreadsheet.');
+    var sourceId = PropertiesService.getScriptProperties().getProperty('JANNAH_SOURCE_SHEET_ID');
+    var spreadsheet = sourceId ? SpreadsheetApp.openById(sourceId) : SpreadsheetApp.getActiveSpreadsheet();
+    if (!spreadsheet) throw new Error('Source Sheet unavailable. Run setupJannahRankingAutoSync again from the bound spreadsheet.');
     var sheet = spreadsheet.getSheetByName(BPP_JANNAH_SYNC.tab);
     if (!sheet) throw new Error('Cannot find the Ranking Jannah tab.');
 
