@@ -15,9 +15,9 @@ Panduan rasmi: https://docs.github.com/en/pages/getting-started-with-github-page
 - Teks, warna dan susunan berada dalam index.html.
 - Cari `const JANNAH`. Tukar nilai `points:null` kepada nombor yang disahkan; isi `updated` dengan tarikh data sebenar.
 - Kedudukan disusun automatik apabila semua empat nilai markah tersedia. Nilai seri mendapat kedudukan sama.
-- Ini belum bersambung kepada Google Sheets. Tiada dakwaan data langsung atau auto-sync.
+- Ranking pada laman dibaca daripada `jannah-ranking.json`. Fail ini bermula sebagai snapshot daripada Google Sheet; penyegerakan automatik setiap 15 minit tersedia **selepas persediaan sekali sahaja** melalui Google Apps Script dan token GitHub dengan kebenaran terhad. [Panduan pengaktifan](sync/README.md).
 - Logo asal BPP telah dimasukkan. Foto asal empat MVP telah diambil daripada PDF yang dibekalkan dan dipadankan dengan label nama asal.
-- Data MVP berdasarkan teks Canva Penggal 1–3 2026; bukan kedudukan semasa.
+- Data MVP berdasarkan teks Canva Penggal 1–3 2026; bukan kedudukan semasa. Skor empat Jannah sahaja diterbitkan secara agregat melalui `jannah-ranking.json`.
 - Semak nama, markah, kandungan dan kesesuaian penerbitan sebelum menanggalkan label pratonton.
 
 ## Asas kandungan
