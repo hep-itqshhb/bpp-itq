@@ -116,11 +116,59 @@ html,body{max-width:100%;overflow-x:clip}
   .menu{min-width:68px;padding-inline:12px}
   .houses{grid-template-columns:1fr}
 }
+
+/* BPP Activity Calendar: two-week, public-safe programme display */
+.activity-board{display:grid;gap:30px}
+.activity-panel{min-width:0;border:1px solid #3d2a50;border-radius:28px;padding:32px;background:linear-gradient(145deg,#1a1024,#130c1c);box-shadow:0 20px 55px #00000022}
+.activity-panel-upcoming{border-color:#634286;background:radial-gradient(ellipse at 100% 0,rgba(154,99,239,.13),transparent 40%),linear-gradient(145deg,#20112d,#130c1c)}
+.activity-panel-past{background:linear-gradient(145deg,#191122,#110c19)}
+.activity-panel-head{margin-bottom:28px}
+.activity-panel-head h3{font:400 clamp(1.7rem,3.1vw,2.3rem)/1.2 Georgia,serif;letter-spacing:-.025em;margin:7px 0 9px;color:#f7f0ff}
+.activity-panel-head p{margin:0;color:#b8a9c9;font-size:14px}
+.activity-panel-head .eyebrow{font-size:11px;color:#d3b5ff}
+.activity-week+.activity-week{margin-top:30px}
+.activity-week-heading{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px 18px;border-bottom:1px solid #473154;padding-bottom:12px;margin-bottom:18px}
+.activity-week-heading h4{font:600 16px/1.4 'Segoe UI',Arial,sans-serif;letter-spacing:.02em;margin:0;color:#f4eaff}
+.activity-week-heading span{font-size:13px;color:#baa7cf}
+.activity-week .activities,.activity-past-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.activity-board .activity{min-height:215px;padding:21px 22px}
+.activity-board .activity h3{font:400 20px/1.3 Georgia,serif;margin:14px 0 9px;overflow-wrap:anywhere;min-height:0}
+.activity-board .activity p{font-size:13px;line-height:1.65}
+.activity-board .activity .date{font-size:12px;min-height:27px;padding:3px 10px}
+.activity-category{display:block;margin-top:13px;color:#c4a0ff;font-size:11px;letter-spacing:.08em;font-weight:700;text-transform:uppercase}
+.activity-meta{display:grid;gap:4px;margin-top:12px}
+.activity-meta span{color:#b9acce;font-size:12px;line-height:1.5}
+.activity-meta strong{color:#e8d4fa;font-weight:600}
+.activity-meta .activity-extra{color:#ead69c}
+.activity-empty{grid-column:1/-1;border:1px dashed #5b4368;background:#21142d;border-radius:18px;padding:23px;color:#bbaacc;font-size:13px;margin:0}
+.activity-source{margin:23px 0 0;border-top:1px solid #40304e;padding-top:14px;color:#aca0bb;font-size:12px}
+.activity-archive{margin-top:22px;border-top:1px solid #40304e;padding-top:17px}
+.activity-archive summary{width:max-content;max-width:100%;color:#ddc7f6;font-size:14px;cursor:pointer}
+.activity-archive summary:hover{color:#fff}
+.activity-archive .activities{margin-top:18px}
+.activity-archive-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:980px){.activity-week .activities,.activity-past-grid,.activity-archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.activity-panel{padding:23px 18px;border-radius:22px}.activity-week .activities,.activity-past-grid,.activity-archive-grid{grid-template-columns:1fr}.activity-board .activity{min-height:0;padding:20px}.activity-board{gap:22px}.activity-panel-head{margin-bottom:21px}}
+
 </style></head>
 <body><a class="skip" href="#utama">Langkau ke kandungan</a><header class="header"><div class="wrap nav"><a class="brand" href="#utama" aria-label="BPP, halaman utama"><span class="logo-frame"><img src="./logo-bpp.png" alt="Logo Bahagian Pembangunan Pelajar" width="1592" height="2048"></span><span><strong>Pembangunan Pelajar</strong><small>ITQSHHB · BRUNEI DARUSSALAM</small></span></a><button class="menu" aria-expanded="false" aria-controls="navigation">Menu</button><nav class="links" id="navigation" aria-label="Navigasi utama"><a href="#tentang">Tentang BPP</a><a href="#aktiviti">Aktiviti</a><a href="#jannah">Jannah</a><a href="#mvp">MVP 2026</a></nav></div></header><div class="ticker" role="region" aria-label="Sorotan BPP"><div class="ticker-label">INFO BPP</div><p class="sr-only">436 pelajar keseluruhan: 311 pelajar Menengah Tahun 7–11, 118 pelajar DTAQ dan 7 pelajar Braille LP. Pecahan Menengah: Tahun 7 seramai 57, Tahun 8 seramai 67, Tahun 9 seramai 63, Tahun 10 seramai 70 dan Tahun 11 seramai 54.</p><div class="ticker-window" aria-hidden="true"><div class="ticker-track"><div class="ticker-set"><span>436 PELAJAR KESELURUHAN</span><span>311 MENENGAH · TAHUN 7–11</span><span>118 PELAJAR DTAQ</span><span>7 PELAJAR BRAILLE LP</span><span>TAHUN 7: 57 · TAHUN 8: 67 · TAHUN 9: 63 · TAHUN 10: 70 · TAHUN 11: 54</span><span>4 JANNAH · 1 MATLAMAT</span><span>MENDIDIK JIWA KHALIFAH, PEMIMPIN UMMAH</span></div><div class="ticker-set"><span>436 PELAJAR KESELURUHAN</span><span>311 MENENGAH · TAHUN 7–11</span><span>118 PELAJAR DTAQ</span><span>7 PELAJAR BRAILLE LP</span><span>TAHUN 7: 57 · TAHUN 8: 67 · TAHUN 9: 63 · TAHUN 10: 70 · TAHUN 11: 54</span><span>4 JANNAH · 1 MATLAMAT</span><span>MENDIDIK JIWA KHALIFAH, PEMIMPIN UMMAH</span></div></div></div></div>
 <main id="utama"><section class="hero"><div class="wrap"><div><div class="eyebrow">Bahagian Pembangunan Pelajar</div><h1>Mendidik jiwa<br><em>Khalifah,</em><br>Pemimpin Ummah</h1><p>Membangun syakhsiah, menyuburkan kerohanian dan menyerlahkan potensi pelajar Institut Tahfiz Al-Quran Sultan Haji Hassanal Bolkiah.</p><div class="actions"><a class="btn" href="#jannah">Terokai Jannah &nbsp; ↗</a><a class="textlink" href="#tentang">Kenali BPP</a></div></div><aside class="hero-side"><img class="campus-photo" src="./campus-day.png" alt="Visual olahan kampus institut dengan bumbung biru dan menara" fetchpriority="high"><div class="hero-caption"><div class="eyebrow">Semangat kebersamaan</div><h2>Empat Jannah.<br>Satu matlamat.</h2><div class="house-mini"><span style="--house:#f4c64d"><i class="dot"></i>Ma’wa</span><span style="--house:#77b5ef"><i class="dot"></i>Na’im</span><span style="--house:#65cb99"><i class="dot"></i>Adnin</span><span style="--house:#f48b88"><i class="dot"></i>Firdaus</span></div><p class="visual-note">Visual olahan kampus</p></div></aside></div><div class="hero-foot"><div class="wrap"><span>SYAKHSIAH &nbsp; / &nbsp; KEROHANIAN &nbsp; / &nbsp; KEPIMPINAN</span><span>Institut Tahfiz Al-Quran Sultan Haji Hassanal Bolkiah</span></div></div></section>
 <section id="tentang" class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / Mengenali kami</div><h2>Huffaz yang cemerlang,<br>insan yang menyumbang.</h2></div><p>Pembangunan pelajar secara holistik, berteraskan nilai Melayu Islam Beraja dan Ahli Sunnah Wal Jamaah.</p></div><div class="grid2"><article class="vision"><div class="eyebrow">Visi</div><p>Menjadi tunggak utama dalam pembentukan Huffaz yang berkualiti secara holistik, dalam mencapai kecemerlangan duniawi dan ukhrawi.</p></article><article class="vision"><div class="eyebrow">Misi</div><p>Mengurus dan melaksana program pembangunan syakhsiah holistik, kebajikan, dan kepimpinan berlandaskan nilai Melayu Islam Beraja dan Ahli Sunnah Wal Jamaah.</p></article></div><div class="units"><article class="unit"><span class="num">01</span><h3>Unit Syakhsiah &amp; Disiplin</h3><p>Pembentukan adab, sahsiah dan disiplin pelajar.</p></article><article class="unit"><span class="num">02</span><h3>Unit Kegiatan &amp; Kerohanian</h3><p>Penglibatan aktif, kepimpinan dan penghayatan nilai kerohanian.</p></article><article class="unit"><span class="num">03</span><h3>Unit Sukan &amp; Riadah</h3><p>Semangat berpasukan, kecergasan dan kesejahteraan pelajar.</p></article></div></div></section>
-<section class="section white" id="aktiviti"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / Kehidupan pelajar</div><h2>Ruang untuk berkembang.</h2></div><p>Aktiviti BPP dan kolaborasi bersama jabatan serta bahagian lain.</p></div><div class="activities"><article class="activity"><div class="date">24 Januari 2026</div><h3>Majlis Penerimaan Pelajar Baharu</h3><p>57 pelajar Tahun 7: 28 pelajar lelaki dan 29 pelajar perempuan.</p></article><article class="activity"><a class="activity-link" href="./ihya-ramadhan-2026.html"><div class="date">11 Mac 2026</div><h3>Program Ihya Ramadhan</h3><p>Musabaqah Hafazan Al-Quran bagi pelajar peringkat Menengah.</p><span class="read-more">Baca berita <span aria-hidden="true">→</span></span></a></article><article class="activity"><div class="date">13 Jun</div><h3>Sukan Tahunan</h3><p>Semangat kesukanan dan kebersamaan antara Jannah.</p></article><article class="activity"><div class="date">8 &amp; 9 Julai</div><h3>Hari Terbuka</h3><p>Sebahagian daripada sorotan kegiatan institut.</p></article></div></div></section>
+<section class="section white" id="aktiviti"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">02 / Kehidupan pelajar</div><h2>Ruang untuk berkembang.</h2></div><p>Aktiviti BPP dan kolaborasi bersama jabatan serta bahagian lain, berpandukan kalendar ITQSHHB.</p></div>
+<div class="activity-board">
+<section class="activity-panel activity-panel-upcoming" aria-labelledby="upcoming-heading">
+<div class="activity-panel-head"><span class="eyebrow">Apa yang menanti</span><h3 id="upcoming-heading">Akan Berlangsung</h3><p>Aktiviti yang disahkan bagi minggu ini dan minggu hadapan.</p></div>
+<div class="activity-week"><div class="activity-week-heading"><h4>Minggu Ini</h4><span id="activity-week-current">2–8 November 2026</span></div><div class="activities" id="activity-current-events" aria-live="polite"><p class="activity-empty">Memuatkan jadual aktiviti…</p></div></div>
+<div class="activity-week"><div class="activity-week-heading"><h4>Minggu Hadapan</h4><span id="activity-week-next">9–15 November 2026</span></div><div class="activities" id="activity-next-events" aria-live="polite"><p class="activity-empty">Memuatkan jadual aktiviti…</p></div></div>
+<p class="activity-source" id="activity-source">Sumber: Kalendar ITQSHHB · Hanya aktiviti yang disahkan dan sesuai untuk hebahan awam.</p>
+</section>
+<section class="activity-panel activity-panel-past" aria-labelledby="past-heading">
+<div class="activity-panel-head"><span class="eyebrow">Jejak penglibatan</span><h3 id="past-heading">Telah Berlangsung</h3><p>Aktiviti yang telah selesai dalam minggu semasa, disusuli sorotan terdahulu.</p></div>
+<div class="activities activity-past-grid" id="activity-past-events" aria-live="polite"><p class="activity-empty">Memuatkan sorotan minggu ini…</p></div>
+<details class="activity-archive"><summary>Sorotan aktiviti terdahulu 2026</summary><div class="activities activity-archive-grid"><article class="activity"><div class="date">24 Januari 2026</div><h3>Majlis Penerimaan Pelajar Baharu</h3><p>57 pelajar Tahun 7: 28 pelajar lelaki dan 29 pelajar perempuan.</p></article><article class="activity"><a class="activity-link" href="./ihya-ramadhan-2026.html"><div class="date">11 Mac 2026</div><h3>Program Ihya Ramadhan</h3><p>Musabaqah Hafazan Al-Quran bagi pelajar peringkat Menengah.</p><span class="read-more">Baca berita <span aria-hidden="true">→</span></span></a></article><article class="activity"><div class="date">13 Jun</div><h3>Sukan Tahunan</h3><p>Semangat kesukanan dan kebersamaan antara Jannah.</p></article><article class="activity"><div class="date">8 &amp; 9 Julai</div><h3>Hari Terbuka</h3><p>Sebahagian daripada sorotan kegiatan institut.</p></article></div></details>
+</section>
+</div></div></section>
 <section id="jannah" class="section jannah"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / Setiap sumbangan bermakna</div><h2>Jannah kita.</h2></div><p>Kejayaan individu menyumbang kepada kecemerlangan bersama.</p></div><p class="notice" id="ranking-status">Sumber: jannah terbaik v4 · Tab Ranking Jannah · Semakan 5 November 2026.</p><div class="houses" id="houses"></div><noscript><p>Empat Jannah: Ma’wa, Na’im, Adnin dan Firdaus. Aktifkan JavaScript untuk melihat paparan markah.</p></noscript><div class="rules"><details><summary>Bagaimana markah dikumpulkan?</summary><p>Markah individu disumbangkan kepada Jannah melalui pencapaian yang direkodkan:</p><ul><li>Akademik dan peperiksaan</li><li>Kehadiran dan sahsiah</li><li>Kegiatan, pertandingan dan kepimpinan</li><li>Program kerohanian, termasuk khatam 30 juz</li></ul></details><details><summary>Bagaimana pemotongan markah dibuat?</summary><p>Pemotongan dikenakan bagi pelanggaran disiplin, masalah kehadiran, etika pakaian serta tingkah laku. Kesalahan serius, termasuk membawa telefon bimbit dan tidak beradab terhadap guru, membawa pemotongan lebih besar mengikut ketetapan sekolah.</p></details></div></div></section>
 <section id="mvp" class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">04 / Pengiktirafan pelajar · Penggal 1–3, 2026</div><h2>Cemerlang. Menyumbang.<br>Memberi impak.</h2></div><p>MVP Jannah mengiktiraf sumbangan markah melalui akademik, kehadiran, kepimpinan dan kegiatan.</p></div><div class="mvp-grid"><article class="mvp top" style="--house:#f0cc73"><div class="award">MVP Ma’wa · Terbaik keseluruhan</div><img class="portrait" src="./mvp-mawa.png" alt="Muhammad Qawiem Al Mahfuz" loading="lazy"><h3>Muhammad Qawiem Al Mahfuz bin Mohammad Hamdi</h3><p>Terbaik Kehadiran · Kuiz Kegiatan · Terbaik Peperiksaan</p><div class="points">15 markah</div></article><article class="mvp" style="--house:#238456"><div class="award">MVP Adnin</div><img class="portrait" src="./mvp-adnin.png" alt="Nur Heldina Sumayyah" loading="lazy"><h3>Nur Heldina Sumayyah binti Mohammad Heldi</h3><p>Anugerah MPP · Terbaik Peperiksaan</p><div class="points">10 markah</div></article><article class="mvp" style="--house:#3074ae"><div class="award">MVP Na’im</div><img class="portrait" src="./mvp-naim.png" alt="DK Nurus Sa’adah" loading="lazy"><h3>DK Nurus Sa’adah binti PG Mohammad Helmy</h3><p>Terbaik Peperiksaan · Terbaik Kehadiran</p><div class="points">10 markah</div></article><article class="mvp" style="--house:#b54a49"><div class="award">MVP Firdaus</div><img class="portrait" src="./mvp-firdaus.png" alt="Adam Abbasy" loading="lazy"><h3>Adam Abbasy bin Haji Rusli</h3><p>Terbaik Peperiksaan · Terbaik Kehadiran</p><div class="points">10 markah</div></article></div><p class="quote">“MVP bukan hanya tentang siapa yang cemerlang — tetapi siapa yang menjadikan kecemerlangannya bernilai kepada Jannahnya.”</p></div></section><section class="closing" aria-label="Semangat Jannah"><img src="./campus-night.png" alt="" loading="lazy"><div><div class="eyebrow">Bersama membina kecemerlangan</div><h2>Your Achievement.<br>Your Contribution.<br><em>Your Jannah.</em></h2><p>Setiap usaha bernilai. Setiap sumbangan bermakna.</p><p class="visual-note">Visual olahan kampus pada waktu malam</p></div></section></main>
 <footer class="footer"><div class="wrap"><div><strong>Bahagian Pembangunan Pelajar</strong><p>Institut Tahfiz Al-Quran Sultan Haji Hassanal Bolkiah<br>Brunei Darussalam</p><span class="draft">Versi pratonton · Kandungan berdasarkan reka bentuk Canva</span><div class="visitor-counter" aria-label="Kaunter paparan laman"><span class="visitor-counter-copy"><strong>Jejak Pelawat</strong><small>Hari ini · Keseluruhan</small></span><img src="https://hits.sh/hep-itqshhb.github.io/bpp-itq.svg?view=today-total&amp;style=for-the-badge&amp;label=Paparan&amp;color=%239c63ef&amp;labelColor=%2316101f" alt="Kaunter paparan laman hari ini dan keseluruhan" loading="eager" referrerpolicy="no-referrer"></div></div><a href="#utama">Kembali ke atas ↑</a></div></footer>
@@ -192,6 +240,97 @@ if(ready)document.getElementById('ranking-status').textContent='Sumber: jannah t
    : 'Sumber: jannah terbaik v4 · Ranking Jannah · Masa kemas kini tidak tersedia.';
  } catch(error) {
   console.warn('Jannah JSON unavailable; displaying previously verified embedded snapshot.',error);
+ }
+})();
+
+
+/* Calendar display: all dates are interpreted in Brunei local time. */
+(async function renderBppActivities(){
+ const status=document.getElementById('activity-source');
+ const ids={current:'activity-current-events',next:'activity-next-events',past:'activity-past-events'};
+ const fmt=(iso,opts={day:'numeric',month:'long',year:'numeric'})=>{
+  const [y,m,d]=iso.split('-').map(Number);
+  return new Date(Date.UTC(y,m-1,d)).toLocaleDateString('ms-MY',{...opts,timeZone:'UTC'});
+ };
+ const isoDate=date=>date.toISOString().slice(0,10);
+ const addDays=(date,days)=>new Date(date.getTime()+days*86400000);
+ const nowParts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Brunei',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+ const part=type=>nowParts.find(p=>p.type===type)?.value;
+ const today=[part('year'),part('month'),part('day')].join('-');
+ const minutes=Number(part('hour'))*60+Number(part('minute'));
+ const todayUTC=new Date(today+'T00:00:00Z');
+ const monday=addDays(todayUTC,-((todayUTC.getUTCDay()+6)%7));
+ const nextMon=addDays(monday,7),currentSun=addDays(monday,6),nextSun=addDays(monday,13);
+ const thisStart=isoDate(monday),thisEnd=isoDate(currentSun),nextStart=isoDate(nextMon),nextEnd=isoDate(nextSun);
+ document.getElementById('activity-week-current').textContent=fmt(thisStart,{day:'numeric',month:'short'})+' – '+fmt(thisEnd);
+ document.getElementById('activity-week-next').textContent=fmt(nextStart,{day:'numeric',month:'short'})+' – '+fmt(nextEnd);
+ function empty(target,message){
+  target.replaceChildren();
+  const note=document.createElement('p');note.className='activity-empty';note.textContent=message;target.append(note);
+ }
+ function makeCard(event){
+  const card=document.createElement('article');card.className='activity';
+  const time=document.createElement('time');time.className='date';time.dateTime=event.start;
+  time.textContent=fmt(event.start,{weekday:'short',day:'numeric',month:'short'})+
+   (event.end!==event.start?' – '+fmt(event.end,{day:'numeric',month:'short'}):'');
+  const category=document.createElement('span');category.className='activity-category';category.textContent=event.category||'Aktiviti';
+  const title=document.createElement('h3');title.textContent=event.title;
+  const meta=document.createElement('div');meta.className='activity-meta';
+  function line(label,value,extra){
+   if(!value)return;
+   const row=document.createElement('span');if(extra)row.className='activity-extra';
+   const strong=document.createElement('strong');strong.textContent=label+': ';
+   row.append(strong,document.createTextNode(value));meta.append(row);
+  }
+  line(event.endTime?'Masa':'Mula',event.startTime?(event.startTime+(event.endTime?' – '+event.endTime:'')):'');
+  line('Tempat',event.venue);
+  line('Terlibat',event.audience);
+  line('Nota',event.info,true);
+  card.append(time,category,title,meta);
+  return card;
+ }
+ function renderList(element,events,emptyText){
+  element.replaceChildren();
+  if(!events.length){empty(element,emptyText);return;}
+  const fragment=document.createDocumentFragment();events.forEach(event=>fragment.append(makeCard(event)));element.append(fragment);
+ }
+ const validDay=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value);
+ const isFinished=event=>{
+  if(event.end<today)return true;
+  if(event.end>today)return false;
+  if(event.endTime&&/^\d{2}:\d{2}$/.test(event.endTime)){
+   const [h,m]=event.endTime.split(':').map(Number);
+   return minutes>=h*60+m;
+  }
+  return minutes>=1080;
+ };
+ try{
+  const response=await fetch('./aktiviti-kalendar.json',{cache:'no-store'});
+  if(!response.ok)throw new Error('calendar HTTP '+response.status);
+  const data=await response.json();
+  if(data.schemaVersion!==1||data.source!=='Kalendar ITQSHHB'||data.sourceTab!=='Aktiviti'||!Array.isArray(data.events)){
+   throw new Error('Invalid calendar schema');
+  }
+  const events=data.events.filter(event=>typeof event.title==='string'&&validDay(event.start)&&validDay(event.end)&&event.end>=event.start&&event.end>=thisStart&&event.start<=nextEnd)
+   .sort((a,b)=>a.start.localeCompare(b.start)||(a.startTime||'').localeCompare(b.startTime||'')||a.title.localeCompare(b.title));
+  const ongoingAndFuture=events.filter(event=>!isFinished(event));
+  const past=events.filter(isFinished).sort((a,b)=>b.start.localeCompare(a.start)||(b.startTime||'').localeCompare(a.startTime||'')).slice(0,4);
+  renderList(document.getElementById(ids.current),ongoingAndFuture.filter(event=>event.start<=thisEnd),'Tiada aktiviti lain yang disahkan bagi baki minggu ini.');
+  renderList(document.getElementById(ids.next),ongoingAndFuture.filter(event=>event.start>=nextStart),'Tiada aktiviti disahkan yang dipaparkan bagi minggu hadapan.');
+  renderList(document.getElementById(ids.past),past,'Belum ada aktiviti terkini yang telah selesai dalam minggu ini.');
+  const raw=data.lastSyncedAt;
+  let timestamp='';
+  if(typeof raw==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(raw))timestamp=fmt(raw);
+  else if(typeof raw==='string'&&!Number.isNaN(new Date(raw).getTime())){
+   const date=new Date(raw);
+   timestamp=date.toLocaleDateString('ms-MY',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Brunei'})+', '+
+    date.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Brunei',hourCycle:'h23'});
+  }
+  status.textContent='Sumber: Kalendar ITQSHHB · Aktiviti disahkan untuk hebahan awam.'+(timestamp?' · Data diselaraskan: '+timestamp+' (Brunei).':'');
+ }catch(error){
+  console.warn('BPP calendar feed unavailable',error);
+  Object.values(ids).forEach(id=>empty(document.getElementById(id),'Jadual belum dapat dimuatkan. Sila cuba semula kemudian.'));
+  status.textContent='Jadual aktiviti tidak dapat dimuatkan buat masa ini. Sorotan terdahulu masih tersedia.';
  }
 })();
 
