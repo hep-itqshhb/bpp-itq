@@ -11,6 +11,13 @@ Website statik, responsif dan tanpa pemasangan tambahan. Buka index.html untuk p
 
 Panduan rasmi: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
+## Aktiviti ITQ — dua minggu bergerak
+
+- Bahagian Aktiviti di halaman utama mempunyai dua seksyen: **Akan Berlangsung** (minggu ini dan minggu hadapan) serta **Telah Berlangsung** (aktiviti yang selesai dan sorotan terdahulu).
+- Sumber data awam: `aktiviti-kalendar.json`, ringkasan program disahkan daripada tab `Aktiviti` dalam fail **Kalendar ITQSHHB**. Tidak memuatkan nama pelajar, catatan dalaman atau data disiplin.
+- Laman membaca fail JSON secara automatik; minggu dikira mengikut waktu Brunei. Skrip satu kali persediaan untuk mengemas kini JSON setiap jam telah disediakan di [panduan aktiviti](sync/AKTIVITI_SETUP.md).
+- **Auto-sync aktiviti belum aktif sehingga skrip dipasang dan `setupBppAktivitiAutoSync` dijalankan dalam Apps Script oleh pemilik.** Ranking Jannah menggunakan trigger berasingan.
+
 ## Kemas kini
 - Teks, warna dan susunan berada dalam index.html.
 - Cari `const JANNAH`. Tukar nilai `points:null` kepada nombor yang disahkan; isi `updated` dengan tarikh data sebenar.
