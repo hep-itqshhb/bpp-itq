@@ -3,57 +3,12 @@
   "source": "Kalendar ITQSHHB",
   "sourceTab": "Aktiviti",
   "dateWindow": {
-    "from": "2026-11-02",
-    "to": "2026-11-15"
+    "from": "2026-11-09",
+    "to": "2026-11-22"
   },
-  "lastSyncedAt": "2026-11-05",
+  "lastSyncedAt": "2026-11-08T16:16:00.369Z",
   "events": [
     {
-      "id": "43cee7c2-1d03-4413-9101-e7a0e0fb053c",
-      "title": "Kelas Al-Quran Dalam Talian",
-      "start": "2026-11-04",
-      "end": "2026-11-05",
-      "startTime": "07:00",
-      "endTime": "",
-      "category": "Akademik",
-      "venue": "Atas Talian",
-      "audience": "Pelajar Tahun 7 hingga 10"
-    },
-    {
-      "id": "b5610dea-9b8f-48f5-a10c-37a46efcc9a1",
-      "title": "Bengkel Khalifah 7.0: Conflict management skills",
-      "start": "2026-11-04",
-      "end": "2026-11-04",
-      "startTime": "08:00",
-      "endTime": "12:00",
-      "category": "Kokurikulum",
-      "venue": "Dewan Kuliah",
-      "audience": "Nadi DTAQ & MPP"
-    },
-    {
-      "id": "4cde1a32-9730-45d8-b632-828c694b8046",
-      "title": "Bengkel Khalifah 7.0: Public-speaking Skills",
-      "start": "2026-11-05",
-      "end": "2026-11-05",
-      "startTime": "08:30",
-      "endTime": "12:00",
-      "category": "Kokurikulum",
-      "venue": "Dewan Kuliah",
-      "audience": "Nadi DTAQ & MPP"
-    },
-    {
-      "id": "c3f338ca-3f97-449c-8021-5a84787137a6",
-      "title": "Kelas Al-Quran Dalam Talian",
-      "start": "2026-11-07",
-      "end": "2026-11-07",
-      "startTime": "07:00",
-      "endTime": "",
-      "category": "Akademik",
-      "venue": "Atas Talian",
-      "audience": "Pelajar, Pelajar Tahun 7 hingga 10"
-    },
-    {
-      "id": "9a64910e-9e4e-465a-b472-b504e1c78921",
       "title": "Bengkel Khalifah",
       "start": "2026-11-09",
       "end": "2026-11-09",
@@ -64,7 +19,6 @@
       "audience": "Nadi DTAQ & MPP, Pelajar Tahun 7 hingga 10"
     },
     {
-      "id": "3bbc0cda-aba0-49fb-8fea-e3611a192e39",
       "title": "Bengkel Fotografi",
       "start": "2026-11-09",
       "end": "2026-11-09",
@@ -75,7 +29,6 @@
       "audience": "Nadi Media DTAQ & Biro Media MPP"
     },
     {
-      "id": "9d184c6f-c0cb-49bc-bae6-a0a7000ea9a6",
       "title": "Bengkel Dikir Syarafil Anam",
       "start": "2026-11-10",
       "end": "2026-11-10",
@@ -86,7 +39,6 @@
       "audience": "Semua Pelajar"
     },
     {
-      "id": "72a08f9d-f5fc-4ff3-9cca-36676d112cd5",
       "title": "Bengkel Media: Videografi",
       "start": "2026-11-11",
       "end": "2026-11-11",
@@ -97,7 +49,6 @@
       "audience": "10 orang media, Nadi Media DTAQ & Biro Media MPP"
     },
     {
-      "id": "29417ef4-5d22-405d-b3a3-8b18fadbd64d",
       "title": "Lawatan Ilmiah",
       "start": "2026-11-11",
       "end": "2026-11-11",
@@ -108,7 +59,6 @@
       "audience": "Tahun 7L dan Tahun 8L"
     },
     {
-      "id": "55dc9668-d233-4768-ba7c-2d46846e007a",
       "title": "Program Qudwah Hasanah",
       "start": "2026-11-11",
       "end": "2026-11-11",
@@ -119,7 +69,6 @@
       "audience": "Tahun 7P dan Tahun 8P"
     },
     {
-      "id": "eaa2d4f9-8c42-4245-ab28-f516c04196b0",
       "title": "Hari Keusahawanan",
       "start": "2026-11-12",
       "end": "2026-11-12",
@@ -130,7 +79,6 @@
       "audience": "Semua"
     },
     {
-      "id": "0e53977e-b596-4025-841f-5195d967d556",
       "title": "BN On The Move & Walkathon Warga ITQ",
       "start": "2026-11-14",
       "end": "2026-11-14",
@@ -140,6 +88,86 @@
       "venue": "Kampus Kekal",
       "audience": "Warga ITQSHHB, Semua",
       "info": "Kelas Al-Quran bermula 7.00 pagi"
+    },
+    {
+      "title": "Sukan Ria Hari Guru \" Beyond the Classroom \"",
+      "start": "2026-11-16",
+      "end": "2026-11-16",
+      "startTime": "07:00",
+      "endTime": "12:00",
+      "category": "Majlis",
+      "venue": "UBD Sport Complex",
+      "audience": ""
+    },
+    {
+      "title": "Lawatan Ilmiah ke Pusat Promosi Kesihatan (7L/8L)",
+      "start": "2026-11-17",
+      "end": "2026-11-17",
+      "startTime": "08:30",
+      "endTime": "12:00",
+      "category": "Lawatan",
+      "venue": "Pusat Promosi Kesihatan",
+      "audience": ""
+    },
+    {
+      "title": "Lawatan Ilmiah ke Balai Khazanah Islam (7P/8P)",
+      "start": "2026-11-17",
+      "end": "2026-11-17",
+      "startTime": "09:00",
+      "endTime": "11:30",
+      "category": "Kokurikulum",
+      "venue": "Balai Khazanah Islam",
+      "audience": "Tahun 7P dan Tahun 8P"
+    },
+    {
+      "title": "Majlis Pelajar Cemerlang",
+      "start": "2026-11-18",
+      "end": "2026-11-18",
+      "startTime": "08:30",
+      "endTime": "12:00",
+      "category": "Majlis",
+      "venue": "Dewan Kuliah",
+      "audience": ""
+    },
+    {
+      "title": "Pertandingan Dikir Syarafil Anam",
+      "start": "2026-11-18",
+      "end": "2026-11-18",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "category": "Kokurikulum",
+      "venue": "Asrama",
+      "audience": "Pelajar Tahun 7 hingga 10"
+    },
+    {
+      "title": "Musabaqah Minda Al-Quran",
+      "start": "2026-11-19",
+      "end": "2026-11-19",
+      "startTime": "07:30",
+      "endTime": "11:00",
+      "category": "Kokurikulum",
+      "venue": "Musolla Kampus Kekal",
+      "audience": ""
+    },
+    {
+      "title": "Malam Cinta Rasul",
+      "start": "2026-11-19",
+      "end": "2026-11-19",
+      "startTime": "17:00",
+      "endTime": "22:00",
+      "category": "Lain-lain",
+      "venue": "Ong Sum Ping",
+      "audience": ""
+    },
+    {
+      "title": "Final Musabaqah Tilawah Al-Quran ITQSHHB Kali ke-8",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "startTime": "08:45",
+      "endTime": "10:00",
+      "category": "Kokurikulum",
+      "venue": "Musolla masing-masing",
+      "audience": "Pelajar Tahun 7 hingga 10, Pegawai, Guru"
     }
   ]
 }
