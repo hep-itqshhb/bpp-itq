@@ -3,92 +3,11 @@
   "source": "Kalendar ITQSHHB",
   "sourceTab": "Aktiviti",
   "dateWindow": {
-    "from": "2026-11-09",
-    "to": "2026-11-22"
+    "from": "2026-11-16",
+    "to": "2026-11-29"
   },
-  "lastSyncedAt": "2026-11-08T16:16:00.369Z",
+  "lastSyncedAt": "2026-11-15T16:16:05.428Z",
   "events": [
-    {
-      "title": "Bengkel Khalifah",
-      "start": "2026-11-09",
-      "end": "2026-11-09",
-      "startTime": "08:00",
-      "endTime": "12:00",
-      "category": "Kokurikulum",
-      "venue": "Kampus Kekal",
-      "audience": "Nadi DTAQ & MPP, Pelajar Tahun 7 hingga 10"
-    },
-    {
-      "title": "Bengkel Fotografi",
-      "start": "2026-11-09",
-      "end": "2026-11-09",
-      "startTime": "13:30",
-      "endTime": "16:00",
-      "category": "Kokurikulum",
-      "venue": "Makmal Komputer",
-      "audience": "Nadi Media DTAQ & Biro Media MPP"
-    },
-    {
-      "title": "Bengkel Dikir Syarafil Anam",
-      "start": "2026-11-10",
-      "end": "2026-11-10",
-      "startTime": "09:30",
-      "endTime": "11:30",
-      "category": "Kokurikulum",
-      "venue": "Musolla Kampus Masing-masing",
-      "audience": "Semua Pelajar"
-    },
-    {
-      "title": "Bengkel Media: Videografi",
-      "start": "2026-11-11",
-      "end": "2026-11-11",
-      "startTime": "08:45",
-      "endTime": "11:30",
-      "category": "Kokurikulum",
-      "venue": "Makmal Komputer",
-      "audience": "10 orang media, Nadi Media DTAQ & Biro Media MPP"
-    },
-    {
-      "title": "Lawatan Ilmiah",
-      "start": "2026-11-11",
-      "end": "2026-11-11",
-      "startTime": "09:00",
-      "endTime": "11:30",
-      "category": "Kokurikulum",
-      "venue": "Balai Khazanah Islam",
-      "audience": "Tahun 7L dan Tahun 8L"
-    },
-    {
-      "title": "Program Qudwah Hasanah",
-      "start": "2026-11-11",
-      "end": "2026-11-11",
-      "startTime": "09:30",
-      "endTime": "11:30",
-      "category": "Kokurikulum",
-      "venue": "Musolla OSP",
-      "audience": "Tahun 7P dan Tahun 8P"
-    },
-    {
-      "title": "Hari Keusahawanan",
-      "start": "2026-11-12",
-      "end": "2026-11-12",
-      "startTime": "08:30",
-      "endTime": "12:00",
-      "category": "Kokurikulum",
-      "venue": "Ruang Legar Admin",
-      "audience": "Semua"
-    },
-    {
-      "title": "BN On The Move & Walkathon Warga ITQ",
-      "start": "2026-11-14",
-      "end": "2026-11-14",
-      "startTime": "08:30",
-      "endTime": "10:00",
-      "category": "Kokurikulum",
-      "venue": "Kampus Kekal",
-      "audience": "Warga ITQSHHB, Semua",
-      "info": "Kelas Al-Quran bermula 7.00 pagi"
-    },
     {
       "title": "Sukan Ria Hari Guru \" Beyond the Classroom \"",
       "start": "2026-11-16",
@@ -168,6 +87,76 @@
       "category": "Kokurikulum",
       "venue": "Musolla masing-masing",
       "audience": "Pelajar Tahun 7 hingga 10, Pegawai, Guru"
+    },
+    {
+      "title": "Musabaqah Hafazan",
+      "start": "2026-11-23",
+      "end": "2026-11-26",
+      "startTime": "",
+      "endTime": "",
+      "category": "Majlis",
+      "venue": "PPPQ MABIMS",
+      "audience": ""
+    },
+    {
+      "title": "Halal Awareness : Bengkel Ibadah Korban",
+      "start": "2026-11-23",
+      "end": "2026-11-23",
+      "startTime": "08:30",
+      "endTime": "12:00",
+      "category": "Hal Ehwal Pelajar",
+      "venue": "Dewan Kuliah & Ruang Legar Admin",
+      "audience": ""
+    },
+    {
+      "title": "Bengkel Media: Canva",
+      "start": "2026-11-23",
+      "end": "2026-11-23",
+      "startTime": "08:45",
+      "endTime": "11:30",
+      "category": "Kokurikulum",
+      "venue": "Makmal Komputer",
+      "audience": "10 orang media, Nadi Media DTAQ & Biro Media MPP"
+    },
+    {
+      "title": "Lawatan Ilmiah",
+      "start": "2026-11-23",
+      "end": "2026-11-23",
+      "startTime": "09:30",
+      "endTime": "11:15",
+      "category": "Kokurikulum",
+      "venue": "Balai Khazanah",
+      "audience": ""
+    },
+    {
+      "title": "Lawatan Ilmiah",
+      "start": "2026-11-24",
+      "end": "2026-11-24",
+      "startTime": "09:30",
+      "endTime": "11:15",
+      "category": "Lawatan",
+      "venue": "Balai Khazanah",
+      "audience": ""
+    },
+    {
+      "title": "Majlis Penutup Persekolahan",
+      "start": "2026-11-25",
+      "end": "2026-11-25",
+      "startTime": "09:00",
+      "endTime": "11:30",
+      "category": "Hal Ehwal Pelajar",
+      "venue": "Kampus Kekal",
+      "audience": ""
+    },
+    {
+      "title": "Teambuilding Warga ITQ",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "startTime": "08:00",
+      "endTime": "12:00",
+      "category": "Lain-lain",
+      "venue": "TBC",
+      "audience": ""
     }
   ]
 }
