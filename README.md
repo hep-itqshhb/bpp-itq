@@ -20,7 +20,7 @@ Panduan rasmi: https://docs.github.com/en/pages/getting-started-with-github-page
 
 ## Kemas kini
 - Teks, warna dan susunan berada dalam index.html.
-- Cari `const JANNAH`. Tukar nilai `points:null` kepada nombor yang disahkan; isi `updated` dengan tarikh data sebenar.
+- `jannah-ranking.json` ialah data ranking awam. `const JANNAH` dalam `index.html` kini merupakan snapshot sandaran jika JSON tidak tersedia atau diterbitkan oleh skrip lama yang tersalah membaca lajur.
 - Kedudukan disusun automatik apabila semua empat nilai markah tersedia. Nilai seri mendapat kedudukan sama.
 - Ranking pada laman dibaca daripada `jannah-ranking.json`. Fail ini bermula sebagai snapshot daripada Google Sheet; penyegerakan automatik setiap 15 minit tersedia **selepas persediaan sekali sahaja** melalui Google Apps Script dan token GitHub dengan kebenaran terhad. [Panduan pengaktifan](sync/README.md).
 - Logo asal BPP telah dimasukkan. Foto asal empat MVP telah diambil daripada PDF yang dibekalkan dan dipadankan dengan label nama asal.
@@ -29,7 +29,7 @@ Panduan rasmi: https://docs.github.com/en/pages/getting-started-with-github-page
 
 ## Asas kandungan
 Reka bentuk Canva BPP milik pengguna.
-Visi dan misi dikekalkan. Placeholder template dibuang; penerangan dipendekkan. Empat aktiviti dipilih sebagai sorotan. Jumlah markah disemak dengan tab Ranking Jannah dan Dashboard dalam jannah terbaik v4 pada 18 September 2026: Adnin 525, Ma'wa 492, Firdaus 398, Na'im 397. Ini salinan data semasa, bukan sambungan automatik. Rekod pelajar dan disiplin individu tidak disalin ke website.
+Visi dan misi dikekalkan. Placeholder template dibuang; penerangan dipendekkan. Empat aktiviti dipilih sebagai sorotan. Snapshot sandaran disemak dengan tab Ranking Jannah dan Dashboard dalam jannah terbaik v4 pada **20 November 2026**: Ma'wa **1,109**, Adnin **1,105**, Na'im **1,077**, Firdaus **1,021**. Hanya markah agregat Jannah diterbitkan. Apps Script mesti membaca lajur bertajuk **Jumlah Markah**, bukannya lajur O tetap. Kemas kini skrip GitHub tidak menggantikan skrip yang telah dipasang dalam Google Sheets; rujuk [panduan penyegerakan](sync/README.md). Rekod pelajar dan disiplin individu tidak disalin ke website.
 
 
 ## Visual assets
