@@ -54,20 +54,34 @@ function syncJannahRankingToGitHub() {
     var sheet = spreadsheet.getSheetByName(BPP_JANNAH_SYNC.tab);
     if (!sheet) throw new Error('Cannot find the Ranking Jannah tab.');
 
-    // Read only column B (Jannah) and column O (Jumlah Markah), rows 2–5.
+    // Look up exact headers dynamically to survive inserted spreadsheet columns.
     // No student names, discipline cases, or individual records are published.
-    var rows = sheet.getRange('B2:O5').getValues();
+    var header = sheet.getRange(1, 1, 1, sheet.getLastColumn())
+      .getDisplayValues()[0].map(function (value) { return String(value).trim(); });
+    var nameColumns = header.reduce(function (found, value, index) {
+      if (value === 'Jannah') found.push(index + 1);
+      return found;
+    }, []);
+    var scoreColumns = header.reduce(function (found, value, index) {
+      if (value === 'Jumlah Markah') found.push(index + 1);
+      return found;
+    }, []);
+    if (nameColumns.length !== 1 || scoreColumns.length !== 1) {
+      throw new Error('Expected exactly one Jannah and one Jumlah Markah header.');
+    }
+    var nameValues = sheet.getRange(2, nameColumns[0], 4, 1).getDisplayValues();
+    var scoreValues = sheet.getRange(2, scoreColumns[0], 4, 1).getValues();
     var canonicalNames = ['Ma’wa', 'Na’im', 'Adnin', 'Firdaus'];
     var aliases = { "ma'wa": 'Ma’wa', "na'im": 'Na’im', adnin: 'Adnin', firdaus: 'Firdaus' };
     var pointsByName = {};
 
-    rows.forEach(function (row) {
+    nameValues.forEach(function (row, index) {
       var input = String(row[0] || '').trim().replace(/[\u2018\u2019]/g, "'").toLowerCase();
       var name = aliases[input];
       if (!name || Object.prototype.hasOwnProperty.call(pointsByName, name)) {
         throw new Error('Unexpected or repeated Jannah name in Ranking Jannah: ' + input);
       }
-      var rawPoints = row[13]; // O, where the reading begins in B.
+      var rawPoints = scoreValues[index][0]; // Exact Jumlah Markah column.
       var points = typeof rawPoints === 'number'
         ? rawPoints
         : Number(String(rawPoints).replace(/,/g, '').trim());
@@ -113,6 +127,7 @@ function syncJannahRankingToGitHub() {
     if (previous.schemaVersion === 1 &&
         previous.source === 'jannah terbaik v4' &&
         previous.sourceTab === BPP_JANNAH_SYNC.tab &&
+        previous.scoreColumn === 'Jumlah Markah' &&
         canonicalNames.every(function (name) { return previousScores[name] === pointsByName[name]; })) {
       console.log('Ranking unchanged. No GitHub commit needed.');
       return;
@@ -122,6 +137,7 @@ function syncJannahRankingToGitHub() {
       schemaVersion: 1,
       source: 'jannah terbaik v4',
       sourceTab: BPP_JANNAH_SYNC.tab,
+      scoreColumn: 'Jumlah Markah',
       updatedAt: new Date().toISOString(),
       houses: canonicalNames.map(function (name) {
         return { name: name, points: pointsByName[name] };
