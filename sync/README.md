@@ -7,13 +7,21 @@ Kod dan fail data awam sudah disediakan dalam repositori GitHub.
 
 Aliran selepas diaktifkan:
 
-1. Google Sheet **jannah terbaik v4** → tab **Ranking Jannah**, lajur B (Jannah) dan O (Jumlah Markah), baris 2–5.
+1. Google Sheet **jannah terbaik v4** → tab **Ranking Jannah**. Skrip mencari lajur bertajuk **Jannah** dan **Jumlah Markah** secara dinamik, baris 2–5.
 2. Google Apps Script membaca empat skor setiap **15 minit**.
 3. Jika skor berubah, Apps Script mengemas kini hanya `jannah-ranking.json` menggunakan GitHub Contents API.
 4. GitHub Pages membaca JSON itu apabila laman BPP dibuka.
-5. Jika skor tidak berubah, tiada commit baharu. Jika JSON gagal dimuatkan, laman memaparkan skor sandaran terakhir dalam `index.html`.
+5. Jika skor tidak berubah, tiada commit baharu. JSON perlu mengandungi `scoreColumn: "Jumlah Markah"`. JSON daripada skrip lama yang tersalah lajur akan ditolak dan laman memaparkan snapshot sandaran yang disahkan dalam `index.html`.
 
 **Keselamatan:** Google Sheet kekal peribadi. Tiada akses awam kepada tab Disiplin, nama pelajar atau rekod individu. Hanya nama empat Jannah, markah terkumpul dan tarikh kemas kini diterbitkan.
+
+## Penting: kemas kini Apps Script yang sudah dipasang
+
+Skrip versi lama membaca lajur O secara tetap. Pada November 2026, penambahan kolum menjadikan O sebagai markah anugerah asrama, bukannya jumlah keseluruhan. **Mengemas kini `sync/jannah-sync.gs` di GitHub tidak secara automatik mengubah skrip yang sudah dipasang dalam Google Sheets.**
+
+Buka **Extensions → Apps Script** pada spreadsheet `jannah terbaik v4`; kemas kini kod fungsi `syncJannahRankingToGitHub` yang sudah ada menggunakan [kod baharu](jannah-sync.gs), simpan dan jalankan fungsi tersebut sekali. Semak fail JSON mempunyai `scoreColumn: "Jumlah Markah"` serta markah yang sama dengan Google Sheet. Trigger 15 minit yang sedia ada boleh diteruskan, tetapi **jangan cipta trigger atau fungsi pendua**. Jika skrip lama masih berjalan, ia boleh menimpa JSON semula; website akan kekal dengan snapshot sandaran sehingga skrip dibetulkan.
+
+Jangan masukkan `GITHUB_TOKEN` dalam repo atau kongsikan nilai token.
 
 ## Persediaan sekali sahaja
 
