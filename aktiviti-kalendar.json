@@ -3,91 +3,11 @@
   "source": "Kalendar ITQSHHB",
   "sourceTab": "Aktiviti",
   "dateWindow": {
-    "from": "2026-11-16",
-    "to": "2026-11-29"
+    "from": "2026-11-23",
+    "to": "2026-12-06"
   },
-  "lastSyncedAt": "2026-11-15T16:16:05.428Z",
+  "lastSyncedAt": "2026-11-22T16:16:02.265Z",
   "events": [
-    {
-      "title": "Sukan Ria Hari Guru \" Beyond the Classroom \"",
-      "start": "2026-11-16",
-      "end": "2026-11-16",
-      "startTime": "07:00",
-      "endTime": "12:00",
-      "category": "Majlis",
-      "venue": "UBD Sport Complex",
-      "audience": ""
-    },
-    {
-      "title": "Lawatan Ilmiah ke Pusat Promosi Kesihatan (7L/8L)",
-      "start": "2026-11-17",
-      "end": "2026-11-17",
-      "startTime": "08:30",
-      "endTime": "12:00",
-      "category": "Lawatan",
-      "venue": "Pusat Promosi Kesihatan",
-      "audience": ""
-    },
-    {
-      "title": "Lawatan Ilmiah ke Balai Khazanah Islam (7P/8P)",
-      "start": "2026-11-17",
-      "end": "2026-11-17",
-      "startTime": "09:00",
-      "endTime": "11:30",
-      "category": "Kokurikulum",
-      "venue": "Balai Khazanah Islam",
-      "audience": "Tahun 7P dan Tahun 8P"
-    },
-    {
-      "title": "Majlis Pelajar Cemerlang",
-      "start": "2026-11-18",
-      "end": "2026-11-18",
-      "startTime": "08:30",
-      "endTime": "12:00",
-      "category": "Majlis",
-      "venue": "Dewan Kuliah",
-      "audience": ""
-    },
-    {
-      "title": "Pertandingan Dikir Syarafil Anam",
-      "start": "2026-11-18",
-      "end": "2026-11-18",
-      "startTime": "20:00",
-      "endTime": "22:00",
-      "category": "Kokurikulum",
-      "venue": "Asrama",
-      "audience": "Pelajar Tahun 7 hingga 10"
-    },
-    {
-      "title": "Musabaqah Minda Al-Quran",
-      "start": "2026-11-19",
-      "end": "2026-11-19",
-      "startTime": "07:30",
-      "endTime": "11:00",
-      "category": "Kokurikulum",
-      "venue": "Musolla Kampus Kekal",
-      "audience": ""
-    },
-    {
-      "title": "Malam Cinta Rasul",
-      "start": "2026-11-19",
-      "end": "2026-11-19",
-      "startTime": "17:00",
-      "endTime": "22:00",
-      "category": "Lain-lain",
-      "venue": "Ong Sum Ping",
-      "audience": ""
-    },
-    {
-      "title": "Final Musabaqah Tilawah Al-Quran ITQSHHB Kali ke-8",
-      "start": "2026-11-21",
-      "end": "2026-11-21",
-      "startTime": "08:45",
-      "endTime": "10:00",
-      "category": "Kokurikulum",
-      "venue": "Musolla masing-masing",
-      "audience": "Pelajar Tahun 7 hingga 10, Pegawai, Guru"
-    },
     {
       "title": "Musabaqah Hafazan",
       "start": "2026-11-23",
@@ -156,6 +76,16 @@
       "endTime": "12:00",
       "category": "Lain-lain",
       "venue": "TBC",
+      "audience": ""
+    },
+    {
+      "title": "Majlis Penutup Halaqah",
+      "start": "2026-11-30",
+      "end": "2026-11-30",
+      "startTime": "08:30",
+      "endTime": "",
+      "category": "Majlis",
+      "venue": "Musolla Kampus Kekal",
       "audience": ""
     }
   ]
