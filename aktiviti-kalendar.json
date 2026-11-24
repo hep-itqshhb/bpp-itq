@@ -6,7 +6,7 @@
     "from": "2026-11-23",
     "to": "2026-12-06"
   },
-  "lastSyncedAt": "2026-11-22T16:16:02.265Z",
+  "lastSyncedAt": "2026-11-24T07:16:00.250Z",
   "events": [
     {
       "title": "Musabaqah Hafazan",
@@ -66,26 +66,6 @@
       "endTime": "11:30",
       "category": "Hal Ehwal Pelajar",
       "venue": "Kampus Kekal",
-      "audience": ""
-    },
-    {
-      "title": "Teambuilding Warga ITQ",
-      "start": "2026-11-28",
-      "end": "2026-11-28",
-      "startTime": "08:00",
-      "endTime": "12:00",
-      "category": "Lain-lain",
-      "venue": "TBC",
-      "audience": ""
-    },
-    {
-      "title": "Majlis Penutup Halaqah",
-      "start": "2026-11-30",
-      "end": "2026-11-30",
-      "startTime": "08:30",
-      "endTime": "",
-      "category": "Majlis",
-      "venue": "Musolla Kampus Kekal",
       "audience": ""
     }
   ]
