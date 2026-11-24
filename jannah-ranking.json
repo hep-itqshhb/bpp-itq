@@ -3,23 +3,25 @@
   "source": "jannah terbaik v4",
   "sourceTab": "Ranking Jannah",
   "scoreColumn": "Jumlah Markah",
-  "updatedAt": "2026-11-24T11:34:05.472Z",
+  "updatedAt": "2026-11-24T12:43:23Z",
   "houses": [
     {
       "name": "Ma’wa",
-      "points": 1264
+      "points": 0
     },
     {
       "name": "Na’im",
-      "points": 1211
+      "points": 0
     },
     {
       "name": "Adnin",
-      "points": 1208
+      "points": 0
     },
     {
       "name": "Firdaus",
-      "points": 1186
+      "points": 0
     }
-  ]
+  ],
+  "status": "closed",
+  "message": "Markah telah pun ditutup."
 }
